@@ -10,6 +10,24 @@ import { createSongUI, removeAllSongs, createLoadingSongPlaceholders, removeLoad
 import { initMediaSession } from "./media-session.js";
 import { initKeyboardShortcuts } from "./keys.js";
 
+// test item
+// - webstorage
+// - open new tab
+// - clipboard
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Whether the app is running in the Microsoft Edge sidebar.
 const isSidebarPWA = (() => {
   console.log("isSidebarPWA --- runing");
@@ -60,6 +78,23 @@ const recordAudioButton = document.getElementById("record-audio");
 const aboutDialog = document.getElementById("about-dialog");
 const installButton = document.getElementById("install-button");
 const currentSongSection = document.querySelector('.current-song');
+
+const clipboard = document.getElementById("clipboard");
+clipboard.addEventListener("click", () => {
+  console.log("clipboard clicked");
+})
+
+
+
+// Manage the play button.
+playButton.addEventListener("click", () => {
+  if (player.isPlaying) {
+    // player.pause();
+    console.log("player is playing");
+  } else {
+    player.play();
+  }
+});
 
 let currentSongEl = null;
 
