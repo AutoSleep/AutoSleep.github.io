@@ -60,4 +60,4 @@ Credits for those songs:
 * Add the ability to drag/drop songs in the playlist to re-order them.
 * Ability to export as another file format.
 * Use viewport segments to display on dual screen devices.
-* Add repeat and shuffle buttons.
+* Add repeat and shuffle buttons.# AutoSleep.github.io
